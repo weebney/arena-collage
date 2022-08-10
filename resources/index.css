@@ -7,7 +7,7 @@ fieldset {
     text-align: justify;
 }
 
-input[type="url"],
+input[type="text"],
 textarea {
 
     background-color: black;

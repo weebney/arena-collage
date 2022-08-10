@@ -70,6 +70,12 @@ const updateLoader = async () => {
     }
 }
 
+onload = async () => {
+    document.body.style.backgroundColor = sessionStorage.getItem('bgcolor')
+
+}
+
+
 var loadState = 3;
 retrieve();
 let loader = setInterval(updateLoader, 200);
