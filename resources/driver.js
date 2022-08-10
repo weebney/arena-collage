@@ -34,6 +34,12 @@ const retrieve = async () => {
             if (array[i].class == "Image") {
                 let fig = document.createElement('figure');
                 fig.setAttribute('id', i);
+                
+                let anchor = document.createElement('a');
+                anchor.setAttribute('id', "anchor" + i);
+                anchor.setAttribute('href', 'https://www.are.na/block/' + array[i].id);
+                anchor.setAttribute('target', '_blank');
+
                 document.getElementById('masonry').appendChild(fig);
                 let img = document.createElement('img');
                 if (window.location.href.includes("/collage.html?")) {
@@ -42,7 +48,10 @@ const retrieve = async () => {
                     img.setAttribute('style', 'z-index: ' + zrandom + ';width: ' + (wrandom) + 'vw;');
                 }
                 img.src = array[i].image.display.url;
-                document.getElementById(i).appendChild(img);
+
+                document.getElementById(i).appendChild(anchor);
+                document.getElementById("anchor"+i).appendChild(img);
+               // document.getElementById(i).innerHTML = img;
             }
             document.getElementById('centered').style.display = 'none';
             clearInterval(loader);

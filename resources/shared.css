@@ -11,6 +11,10 @@
 
 }
 
+img:hover {
+    cursor: alias;
+}
+
 
 body {
     min-height: 100vh;
