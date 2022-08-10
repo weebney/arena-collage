@@ -1,0 +1,24 @@
+#centered {
+    width: 100%;
+    min-height: 75vh;
+    background-color: black;
+    z-index: 1000000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    place-items: center;
+    visibility: visible;
+
+}
+
+
+body {
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    font-size: 5ex;
+    font-kerning: none;
+    font-family: monospace;
+    background-color: black;
+
+}

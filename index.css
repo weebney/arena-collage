@@ -1,0 +1,61 @@
+body {
+    font-size: small;
+    overflow: hidden;
+}
+
+fieldset {
+    text-align: justify;
+}
+
+input[type="url"],
+textarea {
+
+    background-color: black;
+    color: white;
+    width: 97%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8vh;
+    line-height: 0;
+    letter-spacing: -0.2vw;
+}
+
+#centered div {
+    min-width: 15vw;
+    min-height: 3vh;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: justify;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    width: 10vw;
+    /* Your element needs a fixed width */
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1vh;
+    transform: translateX(45vw);
+    justify-content: space-between;
+}
+
+#submit {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+
+}
