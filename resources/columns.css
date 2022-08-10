@@ -1,0 +1,32 @@
+body {
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 20fr auto;
+  margin-bottom: 0px;
+  break-inside: avoid;
+}
+
+figure>img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+figure a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.container {
+  column-count: 4;
+  column-gap: 0px;
+}
