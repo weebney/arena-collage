@@ -15,7 +15,7 @@ const retrieve = async () => {
         let parray = [];
         let array = [];
 
-        for (let i = 0; i < length / 100; i += 1) {
+        for (let i = 1; i < length / 100; i += 1) {
             response = await fetch('https://api.are.na/v2/channels/' + id + '/contents?per=100&page=' + i);
             arenaContent = await response.json();
             parray = arenaContent.contents;
