@@ -4,6 +4,7 @@ function proceed() {
     if (bgcolor.includes('#') != true) {
         bgcolor = '#' + bgcolor;
     }
+    sessionStorage.clear();
     sessionStorage.setItem('bgcolor', bgcolor);
     var courl = document.getElementById("collection").value;
     var passurl = courl.substr(courl.lastIndexOf('/') + 1);
