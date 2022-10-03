@@ -31,7 +31,7 @@ const retrieve = async () => {
         console.log(array)
 
         for (let i = 0; i < array.length; i++) {
-            if (array[i].class == "Image") {
+            if (array[i].class == "Media" || array[i].class == "Image"); {
                 let fig = document.createElement('figure');
                 fig.setAttribute('id', i);
                 
@@ -88,6 +88,6 @@ onload = async () => {
 
 }
 
-var loadState = 3;
 retrieve();
+var loadState = 3;
 let loader = setInterval(updateLoader, 200);
